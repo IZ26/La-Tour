@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    overflow-y: hidden;
+}
+#home:before{
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 660px 250px 0 250px;
+    border-color: #ffffff transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform:
+        translateX(-50%);
+    -webkit-animation:
+        menu-appear .7s ease-out;
+}
+#home img{
+    position: absolute;
+    width: 20%;
+    left: 50%;
+    top: 5%;
+    -webkit-transform:
+        translateX(-50%);
+}
+#menuheader{
+    position: absolute;
+    left: 50%;
+    -webkit-transform:
+        translateX(-50%);
+    top: 24%;
+    list-style: none;
+    font-family: 'LeMonde Livre Classic';
+    text-align: center;
+}
+#menuheader a{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+#menuheader>li{
+    margin-top: 45px;
+    position: relative;
+    font-size: 15px;
+}
+#menuheader a:hover{
+    color: #C09B78;
+    transition: all ease .3s;
+}
+#menuheader a:not(:hover){
+    color: #1C1C1C;
+    transition: all ease .5s;
+}
+#menuheader ul{
+    display: none;
+}
+#menuheader ul li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#menuheader li:hover >ul{
+    display: block;
+}
+#menuheader #language{
+    color: #C09B78;
+    font-size: 10px;
+}
+.fadeout{
+   opacity: 0;
+}
+
+.bg{
+    width: 50%;
+    display: inline-block;
+    height: 660px;
+    float: left;
+}
+.bg1{
+    background-image: url(/static/img/bg1.jpg);
+    background-size: cover;
+    background-position: bottom right;
+}
+.bg2{
+    background-image: url(/static/img/bg2.jpg);
+    background-size: cover;
+    background-position: bottom left;
+}
+/* Animation */
+
+@-webkit-keyframes menu-appear{
+    0%{border-width: 710px 9000px 0 9000px;}
+    100%{border-width: 660px 250px 0 250px;}
+}
+
