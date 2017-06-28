@@ -18,9 +18,6 @@ $('.menu-icon').click(function(){
     $("header").addClass("anim");
     $("header").css("display","block");
  });
-$('#logo').click(function(){
-    $("header").css("display","none");
- });
 
 
 // SCROLL DOWN ARROW
