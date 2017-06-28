@@ -22,6 +22,12 @@ app.get('/chef', function(req, res){
 app.get('/heritage', function(req, res){
     res.sendFile(__dirname + '/views/heritage.html');
 });
+app.get('/cave', function(req, res){
+    res.sendFile(__dirname + '/views/cave.html');
+});
+app.get('/salonprive', function(req, res){
+    res.sendFile(__dirname + '/views/salonprive.html');
+});
 
 server.listen(1337);
 console.log('listenning on port:1337'); 

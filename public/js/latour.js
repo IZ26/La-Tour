@@ -6,6 +6,23 @@ $('#menuheader>li').hover(function() {
     $('#menuheader>li').removeClass('fadeout');
 });
 
+$('.menuheader>li').hover(function() {
+    $('.menuheader>li').addClass('fadeout'); 
+    $(this).removeClass('fadeout');
+}, function(){
+    $('.menuheader>li').removeClass('fadeout');
+});
+
+// BURGER
+$('.menu-icon').click(function(){
+    $("header").addClass("anim");
+    $("header").css("display","block");
+ });
+$('#logo').click(function(){
+    $("header").css("display","none");
+ });
+
+
 // SCROLL DOWN ARROW
 $('.scroll-arrow').click(function(){
     $("html, body").animate({ scrollTop:$('.main').offset().top}, 1000);
@@ -13,9 +30,12 @@ $('.scroll-arrow').click(function(){
  });
 
 $('.scroll-arrow1').click(function(){
-    $("html, body").animate({ scrollTop:$('.slider').offset().top}, 1000);
+    $("html, body").animate({ scrollTop:$('.end').offset().top}, 1000);
     return false;
  });
+
+
+// BURGER 
 
 $('#button1').click(function(){
     $("#andreI-bio").css('display','inline-block');

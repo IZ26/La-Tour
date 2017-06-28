@@ -4,7 +4,7 @@
 }
 #bg{
     width: 100%;
-    height: 660px;
+    height: 100vh;
     overflow: hidden;
     background-image: url(/static/img/heritage/heritage.jpg);
     background-size: cover;
@@ -121,7 +121,7 @@
     margin-top: 20px;
     font-size: 15px;
 }
-.slider{
+.end{
     width: 100%;
     height: 590px;
     background: black;

@@ -15,7 +15,7 @@ body{
 /*-----------------------------*/
 #bg{
     width: 100%;
-    height: 660px;
+    height: 100vh;
     overflow: hidden;
     background-image: url(/static/img/carte/lacarte.jpg);
     background-size: cover;
@@ -414,108 +414,3 @@ p{
     }
 }
 
-/* Tablette */
-@media all and (min-width:721px) and (max-width:1024px){
-    .contain-right{
-        width: 100%;
-        -webkit-clip-path: none;
-        background: white;
-        height: 400px;
-        text-align: left;
-        margin-left: 0;
-    }
-    .contain-left{
-        width: 100%;
-        -webkit-clip-path: none;
-        background: white;
-        height: 500px;
-        text-align: left;
-    }
-    .picture-right,.picture-left{
-        background: white;
-    }
-    .elem12,.elem13,.elem14,
-    .elem15,.elem16,.elem17,
-    .elem18,.elem19,.elem20,
-    .elem21,.elem22,.elem23{
-        margin-left: 0;
-    }
-    .elem1,.elem2,.elem3,
-    .elem4,.elem5,.elem6,
-    .elem7,.elem8,.elem9,
-    .elem10,.elem11{
-        margin-left: 0;
-    }
-    .comment,.comment1,.comment2,
-    .comment3,.comment4,.comment5{
-        margin-left: 0;
-        text-align: left;
-    }
-    .text,.text1,.text2,.text3,
-    .text4,.text5,.text6,
-    .text7,.text8,.text9,
-    .text10{
-        margin-top: 0;
-    }
-    .titre,.titre1,.titre2,.titre3,
-    .titre4,.titre5,.titre6,
-    .titre7,.titre8{
-        padding-top: 0;
-    }
-    h2{
-        color: #C09B78;
-        font-weight: 100;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 0;
-    }
-    strong{
-        color: #C09B78;
-        font-weight: 100;
-        font-size: 13px;
-        display: block;
-        margin-top: 0;
-        margin-right: 0;
-    }
-    .bg-responsive{
-        width: 100%;
-        height: 400px;
-        background-position: center;
-        background-size: 100%;
-        background-repeat: no-repeat;
-    }
-    .bg-responsive1{
-        background-image: url(/static/img/carte/Oursins-de-Dinard.jpg);
-    }
-    .bg-responsive2{
-        background-image: url(/static/img/carte/Caneton-Mazarine-2eme-service.jpg);
-    }
-    .bg-responsive3{
-        background-image: url(/static/img/carte/Langue-de-canard-coeur-grille-jeunes-celeris-en-croute-de-sel-crumble-de-celeri-jus-aux-sucs-de-truffes.jpg);
-    }    
-    .bg-responsive4{
-        background-image: url(/static/img/carte/Saint-Pierre-de-ligne-de-Port-en-Bessin.jpg);
-    }
-    .bg-responsive5{
-        background-image: url(/static/img/carte/Ris-de-veau-fermier-croustillant-petits-pois-thym-citron-ail-nouveau....jpg);
-    }
-    .bg-responsive6{
-        background-image: url(/static/img/carte/img3_zoom.jpg);
-    }
-    .bg-responsive7{
-        background-image: url(/static/img/carte/Chocolat-lait-mousse-caramel-sorbet-chocolat-blanc-ambre-lait-deshydrate-V2.jpg);
-    }
-    .bg-responsive8{
-        background-image: url(/static/img/carte/Mangue-ananas-papaye-crumble-sorbet-noix-de-coco-maracuja-kefir.jpg);
-    }
-    .bg-responsive9{
-        background-image: url(/static/img/carte/Fraises-Ciflorette-XXL-sur-un-biscuit-onctueux-Traou-Mad-cr%C3%A8me-glac%C3%A9e-italienne-%C3%A0-la-f%C3%A8ve-Tonka-marbr%C3%A9-de-granit%C3%A9.jpg);
-    }
-    .bg-responsive10{
-        background-image: url(/static/img/carte/Langouste-puce-royale-a-la-nage-epicee-citronnelle-et-limequat-V1.jpg);
-    }
-    .bg-responsive11{
-        background-image: url(/static/img/carte/Aile-de-raie-bouclee-de-Petit-Bateau-citron-de-Menton-capres-amandes-salicornes-poudre-de-noisettes-V1.jpg);
-    }
-}
-    

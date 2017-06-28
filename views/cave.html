@@ -1,57 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head> 
+<html>
+<head>
     <meta charset="UTF-8">
-    <title>La Tour d'Argent</title>
-    <link rel="stylesheet" type="text/css" href="/static/css/home.css"/>
-    <link rel="icon" href="IMG/apple-icon-60x60.png">
+    <title> La Tour d'Argent </title>
+    <link rel="stylesheet" type="text/css" href="/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/cave.css">
+    <link rel="icon" href="/static/img/apple-icon-60x60.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <section id="home">
-        <img src="/static/img/url1.svg"/>
-        <ul id="menuheader">
-            <li><a href="#">Découvrir</a>
-                <ul>
-                    <li><a href="/carte">La Carte</a></li>
-                    <li><a href="/chef">Le Chef</a></li>
-                    <li><a href="/heritage"> Héritage </a></li>
-                    <li><a href="/cave"> La Cave </a></li>
-                </ul>
-            </li>
-            <li><a href="#">Mais Aussi</a>
-                <ul>
-                    <li><a href="/salonprive">Salon Privé</a></li>
-                    <li><a href="#">Le Comptoir</a></li>
-                    <li><a href="#">La Rôtisserie</a></li>
-                    <li><a href="#">Le Boulanger</a></li>
-                    <li><a href="#">Tokyo</a></li>
-                    <li><a href="#">AG MAG</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Réserver</a>
-                <ul>
-                    <li><a href="#">Réservation</a></li>
-                    <li><a href="#">Invitation</a></li>
-                </ul>
-            </li>
-            <li><a href="https://www.comptoirdelatour.com/fr/">Boutique</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a id="language" href="#">EN</a></li>
-        </ul>
-        <div class="bg bg1"></div> 
-        <div class="bg bg2"></div>
-    </section>
     <section id="bg">
         <a href="#" class="menu-icon">
             <div class="menu-icon-mid"></div>
         </a>
-        <img id="logo" src="/static/img/logo-white.svg"/>
         <header>
             <a href="/"><img src="/static/img/url1.svg"/></a>
-            <ul class="menuheader">
+            <ul id="menuheader">
                 <li><a class="menu-elem1" href="#">Découvrir</a>
-                    <ul>
+                <ul>
                         <li><a class="sous-elem1"href="/carte">La Carte</a></li>
                         <li><a class="sous-elem2" href="/chef">Le Chef</a></li>
                         <li><a class="sous-elem3" href="/heritage"> Héritage </a></li>
@@ -79,7 +45,28 @@
                 <li><a class="menu-elem6" id="language" href="#">EN</a></li>
             </ul>
         </header>
+        <a class="scroll-arrow">
+            <img src="/static/img/fleche.svg"/>
+        </a>
     </section>
+    <section class="main">
+        <div class="bg-responsive"></div>
+        <div class="picture-left">
+            <div class="contain-right">
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+        <a class="scroll-arrow1">
+            <img src="/static/img/fleche-noir.svg"/>
+        </a>
+    </section>
+    <section class="end">
+        
+    </section>
+    <footer>
+        <img src="/static/img/Fichier%201.svg"/>
+    </footer>
     <script src="/static/js/latour.js"></script>
 </body>
-</html> 
+</html>
