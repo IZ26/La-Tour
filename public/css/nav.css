@@ -171,7 +171,7 @@ footer img{
     100%{margin-left: 60%}
 }
 
-@media all and (max-width:720px){
+@media screen and (max-width: 375px){
     header{
         display: none;
         width: 100%;
