@@ -126,7 +126,7 @@ footer img{
 
 .scroll-arrow {
     position: absolute;
-    top: 610px;
+    top: 93%;
     width: 41px;
     height: 29px;
     left: 50%;
@@ -142,7 +142,7 @@ footer img{
     width: 41px;
     height: 29px;
     left: 50%;
-    top: 610px;
+    top: 93%;
     -webkit-transform:
         translateX(-50%);
     cursor: pointer;
@@ -171,7 +171,7 @@ footer img{
     100%{margin-left: 60%}
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 720px){
     header{
         display: none;
         width: 100%;
