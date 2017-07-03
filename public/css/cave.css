@@ -2,14 +2,7 @@
     margin: 0;
     padding: 0;
 }
-#bg{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(/static/img/cave/lacave.jpg);
-    background-size: cover;
-    background-position: bottom;
-}
+
 .main{
     width: 100%;
     height: 660px;
@@ -17,39 +10,162 @@
 }
 .end{
     width: 100%;
-    height: 587px;
-    background: blue;
+    height: 87vh;
 }
 .picture-left{
     width: 100%;
-    height: 590px;
+    height: 89vh;
     background-size: 70%;
     background-position: top left;
     background-repeat: no-repeat;
     background-image: url(/static/img/cave/lacave1.jpg);
     background-attachment: fixed;
-}
+} 
 .contain-right{
     width: 60%;
-    height: 590px;
+    height: 90vh;
     background: white;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
     margin-left: 40%;
+    overflow: scroll;
+}
+.contain-right h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: #C09B78;
+    padding-top: 13%;
+    text-align: center;
+}
+.contain-right p{
+    font-size: 14px;
+    padding-top: 1.5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.contain-right a{
+    font-size: 14px;
+    padding-top: 1.5%;
+    color: #C09B78;
+    display: block;
+    cursor: pointer;
+    margin-left: 20%;
+}
+.more-text{
+    display: none;
+    -webkit-animation:
+        text-appear 1s ease-in-out;
+}
+.picture-right{
+    width: 100%;
+    height: 87vh;
+    background-size: 75%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(/static/img/cave/Page-La-Cave-n°3-1.jpg);
+}
+.contain-left{
+    width: 55%;
+    height: 88vh;
+    background: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+    text-align: left;
+}
+.contain-left h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: #C09B78;
+    padding-top: 10%;
+    margin-left: 30%;
+}
+.contain-left p{
+    font-size: 14px;
+    padding-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.fadeInUp {
+   -webkit-animation: fadeInUp .5s ease-in;
 }
 
 @media all and (max-width:720px){
+    .main{
+        height: 165vh;
+    }
+    .picture-left{
+        background: white;
+        height: 120vh;
+    }
     .contain-right{
         width: 100%;
-        height: 590px;
+        height: 120vh;
         background: white;
         -webkit-clip-path: none;
-        margin-left: 0%;
+        margin-left: 0;
     }
-    .bg-responsive{
+    .contain-right p{
+        font-size: 13px;
+        padding-top: 3%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .contain-right a{
+        display: none;
+    }
+    .contain-right h2{
+        font-size: 25px;
+        font-weight: 100;
+        color: #C09B78;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .more-text{
+        display: block;
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .bg-responsive1{
         width: 100%;
         height: 300px;
+        background-position: center;
         background-size: contain;
-        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url(/static/img/cave/lacave1.jpg);
+    }
+    .end{
+        height: 106vh;
+    }
+    .picture-right{
+        background: white;
+        height: 65vh;
+    }
+    .contain-left{
+        width: 100%;
+        height: 65vh;
+        background: white;
+        -webkit-clip-path: none;
+        margin-left: 0;
+    }
+    .contain-left p{
+        font-size: 13px;
+        padding-top: 3%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .contain-left h2{
+        font-size: 25px;
+        font-weight: 100;
+        color: #C09B78;
+        padding-top: 0%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .bg-responsive2{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: contain;
         background-repeat: no-repeat;
         background-image: url(/static/img/cave/lacave1.jpg);
     }

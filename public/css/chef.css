@@ -1,33 +1,24 @@
 *{
     margin: 0;
     padding: 0;
-}
-#bg{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(/static/img/chef/lechef.jpg);
-    background-size: cover;
-    background-position: center top;
-    overflow-y: hidden;
 } 
 .main{
     width: 100%;
-    height: 660px;
+    height: 100vh;
     position: relative;
 }
 .picture-left{
     width: 100%;
-    height: 590px;
+    height: 90vh;
     background-size: 65%;
     background-position: top left;
     background-repeat: no-repeat;
     background-image: url(/static/img/chef/guide-restaurant-gastronomique-5e-tour-argent-philippe-labbe-chef-avis-paris-capitale-magazine.jpg);
     background-attachment: fixed;
-}
+} 
 .contain-right{
     width: 60%;
-    height: 590px;
+    height: 90vh;
     background: white;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
     margin-left: 40%;
@@ -67,11 +58,11 @@ p{
 }
 .end{
     width: 100%;
-    height: 587px;
+    height: 88vh;
 }
 .swiper-container{
     width: 100%;
-    height: 90%;
+    height: 80vh;
     padding-top: 50px;
 }
 .swiper-container img{
@@ -109,6 +100,16 @@ p{
     border: solid 1px #C09B78; 
     box-sizing: border-box;
 }
+.swiper-button-next:not(:hover){
+    background: #C09B78;
+    background-image: url(/static/img/fleche-next.svg);
+    -webkit-transition: .5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border: solid 1px #C09B78;
+    box-sizing: border-box;
+}
 .swiper-button-prev{
     background: #C09B78;
     background-image: url(/static/img/fleche-prev.svg);
@@ -123,14 +124,55 @@ p{
     border: solid 1px #C09B78;
     box-sizing: border-box;
 }
+.swiper-button-prev:not(:hover){
+    background: #C09B78;
+    background-image: url(/static/img/fleche-prev.svg);
+    -webkit-transition: .5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border: solid 1px #C09B78;
+    box-sizing: border-box;
+}
+.swiper-button-next,
+.swiper-container-rtl 
+.swiper-button-prev{
+    right:15%;
+}
+.swiper-button-prev{
+    left:15%;
+}
 
 @media all and (max-width:720px){
     .contain-right{
         width: 100%;
-        height: 590px;
+        height: 95vh;
         background: white;
         -webkit-clip-path: none;
         margin-left: 0%;
+    }
+    .picture-left{
+        width: 100%;
+        height: 95vh;
+        background: white;
+    }
+    .main{
+        height: 135vh;
+    }
+    h2{
+        display: inline-block;
+        color: #C09B78;
+        font-weight: 100;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+        margin-left: 18%;
+    }
+    p{
+        font-size: 14px;
+        color: #1C1C1C;
+        width: 90%;
+        margin-left: 5%;
     }
     .bg-responsive{
         width: 100%;
@@ -139,5 +181,25 @@ p{
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(/static/img/chef/guide-restaurant-gastronomique-5e-tour-argent-philippe-labbe-chef-avis-paris-capitale-magazine.jpg);
+    }
+    .end{
+        height: 60vh;
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .swiper-container img{
+        width: 100%;
+    }
+    .swiper-button-prev{
+        left: 0%;
+    }
+    .swiper-button-next{
+        right: 0%;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 55vh;
+        padding-top: 30px;
     }
 }

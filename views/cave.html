@@ -10,14 +10,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <section id="bg">
+    <section class="bg bg-cave">
         <a href="#" class="menu-icon">
             <div class="menu-icon-mid"></div>
         </a>
+        <h1> La Cave </h1>
         <header>
             <a href="/"><img src="/static/img/url1.svg"/></a>
             <ul id="menuheader">
-                <li><a class="menu-elem1" href="#">Découvrir</a>
+                <li class="dropdownmenu"><a class="menu-elem1" href="#">Découvrir</a>
                 <ul>
                         <li><a class="sous-elem1"href="/carte">La Carte</a></li>
                         <li><a class="sous-elem2" href="/chef">Le Chef</a></li>
@@ -25,24 +26,24 @@
                         <li><a class="sous-elem4" href="/cave"> La Cave </a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem2" href="#">Mais Aussi</a>
+                <li class="dropdownmenu"><a class="menu-elem2" href="#">Mais Aussi</a>
                     <ul>
                         <li><a class="sous-elem5" href="/salonprive">Salon Privé</a></li>
-                        <li><a class="sous-elem6" href="#">Le Comptoir</a></li>
-                        <li><a class="sous-elem7" href="#">La Rôtisserie</a></li>
-                        <li><a class="sous-elem8" href="#">Le Boulanger</a></li>
-                        <li><a class="sous-elem9" href="#">Tokyo</a></li>
-                        <li><a class="sous-elem10" href="#">AG MAG</a></li>
+                        <li><a class="sous-elem6" href="/comptoir">Le Comptoir</a></li>
+                        <li><a class="sous-elem7" href="/rotisserie">La Rôtisserie</a></li>
+                        <li><a class="sous-elem8" href="/boulanger">Le Boulanger</a></li>
+                        <li><a class="sous-elem9" href="/tokyo">Tokyo</a></li>
+                        <li><a class="sous-elem10" href="https://tourdargent.com/blog/" target="_blank">AG MAG</a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem3" href="#">Réserver</a>
+                <li class="dropdownmenu"><a class="menu-elem3" href="#">Réserver</a>
                     <ul>
                         <li><a class="sous-elem11" href="#">Réservation</a></li>
-                        <li><a class="sous-elem12" href="#">Invitation</a></li>
+                        <li><a class="sous-elem12" href="/invitation">Invitation</a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem4" href="https://www.comptoirdelatour.com/fr/">Boutique</a></li>
-                <li><a class="menu-elem5" href="#">Contact</a></li>
+                <li><a class="menu-elem4" href="https://www.comptoirdelatour.com/fr/" target="_blank">Boutique</a></li>
+                <li><a class="menu-elem5" href="/contact">Contact</a></li>
                 <li><a class="menu-elem6" id="language" href="#">EN</a></li>
             </ul>
         </header>
@@ -51,19 +52,39 @@
         </a>
     </section>
     <section class="main">
-        <div class="bg-responsive"></div>
         <div class="picture-left">
             <div class="contain-right">
-                <h2></h2>
-                <p></p>
+                <h2> La Cave </h2>
+                <p>La Tour d’Argent s’enorgueillit de posséder la cave techniquement la plus parfaite de Paris. Les trésors glorieux des celliers, les flacons de haute mémoire trouvent dans les caveaux leur écrin d’élection. Parmi les 320 000 bouteilles qui y reposent voici quelques trophées, pièces de collection ou spécimens choisis d’années incomparables.</p>
+                <p>Le Château Citran 1858, est le plus ancien des vins de notre cave. À sa gauche, un Château Siran 1865, millésime prestigieux ! Sur ce flacon empoussiéré, c’est un Château Gruaud-Larose, la date se lit mal : c’est 1870, l’année terrible, hélas, mais pour le vigneron du Médoc, une très grande année. Voici l’ancêtre des blancs de Bordeaux, un Château d’Yquem 1871, cette année-là, c’est aux sauternes que les dieux et les cieux avaient réservé leurs faveurs. Plus sublimes encore, les cuvées de 1874, dont nous avons gardé un Château Rayne-Vigneau, ou 1893, que ce Château Guiraud représente assez éloquemment.</p>
+                <a class="button-show-more"> LIRE LA SUITE </a>
+                <div class="more-text">
+                <p>Mais c’est au Bourgogne surtout que nos caves sont consacrées. Voici, parmi tant d’autres illustres, les trois plus beaux fleurons des vendanges bourguignonnes de naguère : un Chambertin 1865, un Clos Vougeot 1870, un Romanée 1874. Plus anciennes encore les fines. Déchiffrons : Fine Champagne, Logis de Servolles 1797, à ses côtés un Cognac, Clos de Griffier, 1788. Qui dit mieux… Mais voyez ces bouteilles étranges. À dire vrai, elles contiennent un breuvage médiocre, un vin passé depuis belle lurette. Jadis, chacun de ces flacons eût récompensé un exploit, eût servi de monnaie d’échange pour d’illicites transactions. Ce vin est “le vin des Corsaires”. Cette collection : le trophée d’un flibustier vaincu.</p>
+                <p>Voici les deux joyaux de notre cave, deux fioles rarissimes : les deux bouteilles de Fine Napoléon qui faisaient légitimement l’orgueil d’André Terrail… Hélas, il n’y en a qu’une ! La deuxième fut dérobée par Pierpont Morgan, à la place une lettre d’excuse et un chèque en blanc qui lui fut retourné. Ainsi, les Caves de la Tour d’Argent sont peut-être le seul endroit au monde où un milliardaire n’ait jamais organisé un hold-up…</p>
+                <p>Tous ces trésors furent sauvés de l’occupation allemande durant la seconde guerre mondiale par Claude Terrail qui mura de ses propres mains, une partie des caves dans la nuit du 14 juin 1940.</p>
+                <a class="button-hide-text"> LIRE MOINS</a>
+                </div>
             </div>
+            <div class="bg-responsive bg-responsive1"></div>
         </div>
         <a class="scroll-arrow1">
             <img src="/static/img/fleche-noir.svg"/>
         </a>
     </section>
     <section class="end">
-        
+        <article>
+            <div class="picture-right">
+                <div class="contain-left">
+                    <h2>L'amour du vin</h2>
+                    <p>David Ridgway est notre Chef Sommelier et c’est grâce à lui que la Tour d’Argent s’est dotée de l’une des caves à vins les plus riches de France et probablement du monde.</p>
+                    <p>Ses fonctions ne se limitent pas à gérer la cave, mais surtout à partager avec la clientèle de la Tour son expertise sans pareille et lui procurer une expérience culinaire du plus haut niveau. Grâce à lui nous détenons le “WineSpectator Grand Award” depuis 1986.</p>
+                    <p>Avant d’entrer à la Tour d’Argent en 1981, David Ridgway a travaillé comme sommelier et maître d’hôtel dans divers restaurants en Angleterre et en Allemagne. Au cours de sa carrière, il a publié plusieurs ouvrages sur le thème du vin, dont Le Grand Atlas du Vin aux Éditions Atlas, un Guide des Sommeliers aux Éditions Fleurus et Amateur de Champagne.</p>
+                    <p>Il s’est également vu décerner divers prix dont le Trophée Spirit (2004), Sommelier de l’Année du Guide Pudlo Paris (1998) et Maître Sommelier de France. David Ridgway est l’un des fondateurs des Dégustations du Grand Jury et il enseigne l’Œnologie à l’Asforest.</p>
+                    <p>Il a fait ses études au Wine and Spirit Trust à London et à la Westminster Hotel School.</p>
+                </div>
+            </div>
+            <div class="bg-responsive bg-responsive2"></div>
+        </article>
     </section>
     <footer>
         <img src="/static/img/Fichier%201.svg"/>

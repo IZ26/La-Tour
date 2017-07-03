@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.end{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.picture-left{
+    width: 100%;
+    height: 83vh;
+    background-size: 60%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url(/static/img/rotisserie/DSC_1244.jpg);
+    background-attachment: fixed;
+}
+.contain-right{
+    width: 60%;
+    height: 83vh;
+    background: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    margin-left: 40%;
+    overflow: scroll;
+}
+.contain-right h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: #C09B78;
+    padding-top: 13%;
+    text-align: center;
+}
+.contain-right p{
+    font-size: 14px;
+    padding-top: 1.5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.contain-right a{
+    font-size: 14px;
+    padding-top: 1.5%;
+    color: #C09B78;
+    display: block;
+    cursor: pointer;
+    margin-left: 20%;
+}
+.more-text{
+    display: none;
+    -webkit-animation:
+        text-appear 1s ease-in-out;
+}
+.fadeInUp {
+   -webkit-animation: fadeInUp .5s ease-in;
+}
+
+.swiper-container{
+    width: 100%;
+    height: 80vh;
+}
+.swiper-container img{
+    width: 50%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-button-next{
+    background: #C09B78;
+    background-image: url(/static/img/fleche-next.svg);
+}
+.swiper-button-next:hover{
+    background: white;
+    background-image: url(/static/img/fleche-next-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    -webkit-transition: .5s;
+    border: solid 1px #C09B78; 
+    box-sizing: border-box;
+}
+.swiper-button-next:not(:hover){
+    background: #C09B78;
+    background-image: url(/static/img/fleche-next.svg);
+    -webkit-transition: .5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border: solid 1px #C09B78;
+    box-sizing: border-box;
+}
+.swiper-button-prev{
+    background: #C09B78;
+    background-image: url(/static/img/fleche-prev.svg);
+}
+.swiper-button-prev:hover{
+    background: white;
+    background-image: url(/static/img/fleche-prev-hover.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    -webkit-transition: .5s;
+    border: solid 1px #C09B78;
+    box-sizing: border-box;
+}
+.swiper-button-prev:not(:hover){
+    background: #C09B78;
+    background-image: url(/static/img/fleche-prev.svg);
+    -webkit-transition: .5s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 35%;
+    border: solid 1px #C09B78;
+    box-sizing: border-box;
+}
+.swiper-button-next,
+.swiper-container-rtl 
+.swiper-button-prev{
+    right:15%;
+}
+.swiper-button-prev{
+    left:15%;
+}
+.information{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+}
+.information h2{
+    font-size: 30px;
+    color: #C09B78;
+}
+.information p{
+    font-size: 13px;
+    padding-top: 1%;
+    color: #1C1C1C;
+}
+.information a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.information a:hover{
+    color: #C09B78;
+}
+.information img{
+    width: 1.5%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.information iframe{
+    margin-top: 3%;
+}
+
+@-webkit-keyframes text-appear {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media all and (max-width:720px){
+    .main{
+        height: 215vh;
+    }
+    .contain-right{
+        width: 100%;
+        height: 170vh;
+        background: white;
+        -webkit-clip-path: none;
+        margin-left: 0%;
+    }
+    .picture-left{
+        background: white;
+        height: 170vh;
+    }
+    .contain-right a{
+        display: none;
+    }
+    .contain-right p{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    .contain-right h2{
+        padding-top: 5%;
+    }
+    .bg-responsive{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url(/static/img/rotisserie/DSC_1244.jpg);
+    }
+    .more-text{
+        display: block;
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .end{
+        height: 50vh;
+    }
+    .swiper-container{
+        width: 100%;
+        height: 50vh;
+    }
+    .swiper-button-next,
+    .swiper-container-rtl 
+    .swiper-button-prev{
+        right:0%;
+    }
+    .swiper-button-prev{
+        left:0%;
+    }
+    .swiper-container img{
+        width: 100%;
+    }
+        .scroll-arrow2{
+        display: none;
+    }
+    .information{
+        height: 75vh;
+    }
+    .information img{
+        width: 5%;
+    }
+    .information h2{
+        font-size: 20px;
+        padding-top: 5%;
+    }
+    .information p{
+        margin-top: 2%;
+    }
+    .information iframe{
+        width: 100%;
+        height: 250px;
+        margin-top: 15px;
+    }
+}

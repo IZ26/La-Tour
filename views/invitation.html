@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> La Tour d'Argent </title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/invitation.css">
+    <link rel="icon" href="/static/img/apple-icon-60x60.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="bg bg-invitation">
+        <a href="#" class="menu-icon">
+            <div class="menu-icon-mid"></div>
+        </a>
+        <h1> Salon Privé </h1>
+        <header>
+            <a href="/"><img src="/static/img/url1.svg"/></a>
+            <ul id="menuheader">
+                <li class="dropdownmenu"><a class="menu-elem1" href="#">Découvrir</a>
+                <ul>
+                        <li><a class="sous-elem1"href="/carte">La Carte</a></li>
+                        <li><a class="sous-elem2" href="/chef">Le Chef</a></li>
+                        <li><a class="sous-elem3" href="/heritage"> Héritage </a></li>
+                        <li><a class="sous-elem4" href="/cave"> La Cave </a></li>
+                    </ul>
+                </li> 
+                <li class="dropdownmenu"><a class="menu-elem2" href="#">Mais Aussi</a>
+                    <ul>
+                        <li><a class="sous-elem5" href="/salonprive">Salon Privé</a></li>
+                        <li><a class="sous-elem6" href="/comptoir">Le Comptoir</a></li>
+                        <li><a class="sous-elem7" href="/rotisserie">La Rôtisserie</a></li>
+                        <li><a class="sous-elem8" href="/boulanger">Le Boulanger</a></li>
+                        <li><a class="sous-elem9" href="/tokyo">Tokyo</a></li>
+                        <li><a class="sous-elem10" href="https://tourdargent.com/blog/" target="_blank">AG MAG</a></li>
+                    </ul>
+                </li>
+                <li class="dropdownmenu"><a class="menu-elem3" href="#">Réserver</a>
+                    <ul>
+                        <li><a class="sous-elem11" href="#">Réservation</a></li>
+                        <li><a class="sous-elem12" href="/invitation">Invitation</a></li>
+                    </ul>
+                </li>
+                <li><a class="menu-elem4" href="https://www.comptoirdelatour.com/fr/" target="_blank">Boutique</a></li>
+                <li><a class="menu-elem5" href="/contact">Contact</a></li>
+                <li><a class="menu-elem6" id="language" href="#">EN</a></li>
+            </ul>
+        </header>
+        <a class="scroll-arrow">
+            <img src="/static/img/fleche.svg"/>
+        </a>
+    </section>
+    <section class="main">
+	<form>
+	       <h2> VOS INVITES </h2>
+        <input type="text" list="series" placeholder="Civilité*"> 
+            <datalist id="series">
+                <option value="Mr"> 
+                <option value="Mme"> 
+            </datalist>
+        <input placeholder="Nom*" type="text">
+        <input placeholder="Prénom*" type="text">
+        <input placeholder="Adresse*" type="text">
+        <input placeholder="Code Postal*" type="text">
+        <input placeholder="Ville*" type="text">
+        <input placeholder="Pays*" type="text">
+        <input placeholder="E-mail*" type="email">
+        <input placeholder="Société" type="text">
+        <input placeholder="Téléphone*" type="tel">
+	</form>
+   <form>
+   <h2> VOS COORDONNEES </h2>
+        <input type="text" list="series" placeholder="Civilité*"> 
+            <datalist id="series">
+                <option value="Mr"> 
+                <option value="Mme"> 
+            </datalist>
+        <input placeholder="Nom*" type="text">
+        <input placeholder="Prénom*" type="text">
+        <input placeholder="Adresse*" type="text">
+        <input placeholder="Code Postal*" type="text">
+        <input placeholder="Ville*" type="text">
+        <input placeholder="Pays*" type="text">
+        <input placeholder="E-mail*" type="email">
+        <input placeholder="Société" type="text">
+        <input placeholder="Téléphone*" type="tel">
+        <textarea placeholder="Message:"></textarea>
+        <div class="button">
+        <input class="sendmail" type="submit" value="Envoyé">
+       </div>
+	</form>
+    </section>
+    <footer>
+        <img src="/static/img/Fichier%201.svg"/>
+    </footer>
+    <script src="/static/js/latour.js"></script>
+</body>
+</html>

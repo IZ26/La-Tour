@@ -28,6 +28,24 @@ app.get('/cave', function(req, res){
 app.get('/salonprive', function(req, res){
     res.sendFile(__dirname + '/views/salonprive.html');
 });
+app.get('/comptoir', function(req, res){
+    res.sendFile(__dirname + '/views/comptoir.html');
+});
+app.get('/rotisserie', function(req, res){
+    res.sendFile(__dirname + '/views/rotisserie.html');
+});
+app.get('/boulanger', function(req, res){
+    res.sendFile(__dirname + '/views/boulanger.html');
+});
+app.get('/tokyo', function(req, res){
+    res.sendFile(__dirname + '/views/tokyo.html');
+});
+app.get('/contact', function(req, res){
+    res.sendFile(__dirname + '/views/contact.html');
+});
+app.get('/invitation', function(req, res){
+    res.sendFile(__dirname + '/views/invitation.html');
+});
 
 server.listen(1337);
 console.log('listenning on port:1337'); 

@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.end{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.picture-left{
+    width: 100%;
+    height: 90vh;
+    background-size: 73%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url(/static/img/tokyo/chef-renaud-augier.jpg);
+    background-attachment: fixed;
+} 
+.contain-right{
+    width: 60%;
+    height: 90vh;
+    background: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    margin-left: 40%;
+}
+.contain-right h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: #C09B78;
+    padding-top: 10%;
+    text-align: center;
+}
+.contain-right p{
+    font-size: 14px;
+    padding-top: 1.5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.picture-right{
+    width: 100%;
+    height: 87vh;
+    background-size: 75%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(/static/img/tokyo/Page-Tour-dArgent-Tokyo-n°3.jpg);
+}
+.contain-left{
+    width: 55%;
+    height: 88vh;
+    background: white;
+    -webkit-clip-path: polygon(0 0, 98% 0, 81.8% 100%, 0% 100%);
+    text-align: left;
+}
+.contain-left h2{
+    font-size: 30px;
+    font-weight: 100;
+    color: #C09B78;
+    padding-top: 10%;
+    margin-left: 30%;
+}
+.contain-left p{
+    font-size: 14px;
+    padding-top: 1.5%;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+.information{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+}
+.information h2{
+    font-size: 30px;
+    color: #C09B78;
+    padding-top: 1%;
+}
+.information p{
+    font-size: 13px;
+    padding-top: .6%;
+    color: #1C1C1C;
+}
+.information a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.information a:hover{
+    color: #C09B78;
+}
+.information iframe{
+    margin-top: 2%;
+}
+
+@media all and (max-width:720px){
+    .main{
+        height: 135vh;
+    }
+    .picture-left{
+        background: white;
+        height: 90vh;
+    }
+    .contain-right{
+        width: 100%;
+        height: 90vh;
+        background: white;
+        -webkit-clip-path: none;
+        margin-left: 0;
+    }
+    .contain-right p{
+        font-size: 13px;
+        padding-top: 3%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .contain-right a{
+        display: none;
+    }
+    .contain-right h2{
+        font-size: 25px;
+        font-weight: 100;
+        color: #C09B78;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .more-text{
+        display: block;
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .bg-responsive1{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/static/img/tokyo/chef-renaud-augier.jpg);
+    }
+    .end{
+        height: 106vh;
+    }
+    .picture-right{
+        background: white;
+        height: 65vh;
+    }
+    .contain-left{
+        width: 100%;
+        height: 65vh;
+        background: white;
+        -webkit-clip-path: none;
+        margin-left: 0;
+    }
+    .contain-left p{
+        font-size: 13px;
+        padding-top: 3%;
+        margin-left: 5%;
+        width: 90%;
+    }
+    .contain-left h2{
+        font-size: 25px;
+        font-weight: 100;
+        color: #C09B78;
+        padding-top: 0%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .bg-responsive2{
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(/static/img/tokyo/Page-Tour-dArgent-Tokyo-n°3.jpg);
+    }
+    .scroll-arrow2{
+        display: none;
+    }
+    .information{
+        height: 70vh;
+    }
+    .information img{
+        width: 5%;
+    }
+    .information h2{
+        font-size: 20px;
+        padding-top: 5%;
+    }
+    .information p{
+        margin-top: 2%;
+    }
+    .information iframe{
+        width: 100%;
+        height: 250px;
+        margin-top: 15px;
+    }
+}

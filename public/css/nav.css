@@ -8,7 +8,7 @@ header{
     height: 100vh;
     background: white;
     margin-left: 60%;
-    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 80% 100%);
+    -webkit-clip-path: polygon(45% 0, 100% 0, 100% 100%, 75% 100%);
     -webkit-animation: 
         menu-appear 1s ease-in-out;
 }
@@ -18,7 +18,7 @@ header img{
     margin-left: 58%;
 }
 #menuheader{
-    margin-left: 70%;
+    margin-left: 65%;
     margin-top: 20%;
     list-style: none;
     font-family: 'LeMonde Livre Classic';
@@ -51,6 +51,15 @@ header img{
 }
 #menuheader li:hover >ul{
     display: block;
+}
+#menuheader li.dropdownmenu:hover a{
+    color: #C09B78;
+}
+#menuheader li.dropdownmenu:hover li a{
+    color: #1C1C1C;
+}
+#menuheader li.dropdownmenu:hover li a:hover{
+    color: #C09B78;
 }
 #menuheader #language{
     color: #C09B78;
@@ -108,7 +117,57 @@ header img{
     margin-left: 30%;
 }
 
-
+.bg{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+.bg-carte{
+    background-image: url(/static/img/carte/lacarte.jpg);
+}
+.bg-chef{
+    background-image: url(/static/img/chef/lechef.jpg);
+}
+.bg-heritage{
+    background-image: url(/static/img/heritage/heritage.jpg);
+    background-position: bottom;
+}
+.bg-cave{
+    background-image: url(/static/img/cave/lacave.jpg);
+}
+.bg-salonprive{
+    background-image:url(/static/img/salonprive/731f70541b2bcccb95c1bafea385a7931e43ca9b.jpg);
+    background-position: bottom;
+}
+.bg-comptoir{
+    background-image: url(/static/img/comptoir/Page-Le-Comptoir-n°1-1-1.jpg);
+    background-position: bottom;
+}
+.bg-rotisserie{
+    background-image: url(/static/img/rotisserie/Page-La-Rôtisserie-dArgent-n°1-1.jpg);
+    background-position: bottom;
+}
+.bg-boulanger{
+    background-image: url(/static/img/boulanger/boulanger-1.jpg);
+    background-position: bottom;
+}
+.bg-tokyo{
+    background-image: url(/static/img/tokyo/tokyo-1.jpg);
+    background-position: bottom;
+}
+.bg-contact{
+    background-image: url(/static/img/c92a0bf92c0f59a580c43c89391be9b64fc1e04f.jpg);
+    background-position: bottom;
+}
+.bg-invitation{
+    background-image: url(/static/img/Page-Invitations-Offrez-la-Tour-n°2-V1.jpg);
+}
+.bg h1{
+    position: absolute;
+}
 .fadeout{
    opacity: 0;
 }
@@ -126,7 +185,7 @@ footer img{
 
 .scroll-arrow {
     position: absolute;
-    top: 93%;
+    top: 90%;
     width: 41px;
     height: 29px;
     left: 50%;
@@ -143,6 +202,20 @@ footer img{
     height: 29px;
     left: 50%;
     top: 93%;
+    -webkit-transform:
+        translateX(-50%);
+    cursor: pointer;
+    transform-origin: bottom center;
+    animation: arrow-scroll 1s infinite ease;
+    display: block;
+}
+.scroll-arrow2{
+    position: absolute;
+    width: 41px;
+    height: 29px;
+    left: 50%;
+    top: 90%;
+    z-index: 1000;
     -webkit-transform:
         translateX(-50%);
     cursor: pointer;
@@ -183,6 +256,7 @@ footer img{
         -webkit-animation: 
             menu-appear 1s ease-in-out;
     }
+    
     header img{
         width: 50%;
         margin-top: 8%;
@@ -194,15 +268,15 @@ footer img{
         list-style: none;
         font-family: 'LeMonde Livre Classic';
         text-align: left;
-    }
+}
     a.menu-icon {
         width: 33px;
         height: 23px;
         background: transparent;
-        position: absolute;
-        top: 24px;
+        top: 8%;
         left: 80%;
         z-index: 1000;
+        position: absolute;
     }
     a.menu-icon::before{
         content: "";

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.end{
+    width: 100%;
+    height: 87vh;
+    text-align: center;
+}
+.picture-left{
+    width: 100%;
+    height: 90vh;
+    background-size: 70%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-image: url(/static/img/comptoir/Page-Le-Comptoir-n°2.jpg);
+    background-attachment: fixed;
+}
+.contain-right{
+    width: 60%;
+    height: 90vh;
+    background: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    margin-left: 40%;
+}
+#text{
+    padding-top: 10%;
+}
+.contain-right p{
+    color: #1C1C1C;
+    font-size: 13px;
+    padding-top: 1.5%;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+.contain-right h2{
+    color: #C09B78;
+    font-weight: 100;
+    font-size: 30px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+.end h2{
+    font-size: 30px;
+    padding-top: 4%;
+    color: #C09B78;
+}
+.end p{
+    font-size: 13px;
+    padding-top: 1%;
+    color: #1C1C1C;
+}
+.end a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.end a:hover{
+    color: #C09B78;
+}
+.end img{
+    width: 1.5%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.end iframe{
+    margin-top: 2%;
+}
+
+@media all and (max-width:720px){
+    .main{
+        height: 135vh;
+    }
+    .contain-right{
+        width: 100%;
+        height: 100vh;
+        background: white;
+        -webkit-clip-path: none;
+        margin-left: 0%;
+    }
+    .contain-right p{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 14px;
+    }
+    #text{
+        padding-top: 5%;
+    }
+    .bg-responsive{
+        width: 100%;
+        height: 300px;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url(/static/img/comptoir/Page-Le-Comptoir-n°2.jpg);
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .end{
+        height: 70vh;
+    }
+    .end img{
+        width: 5%;
+    }
+    .end h2{
+        font-size: 20px;
+        padding-top: 10%;
+    }
+    .end p{
+        margin-top: 2%;
+    }
+    .end iframe{
+        width: 100%;
+        height: 250px;
+        margin-top: 15px;
+    }
+}

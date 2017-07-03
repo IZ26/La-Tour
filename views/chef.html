@@ -11,14 +11,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <section id="bg">
+    <section class="bg bg-chef">
         <a href="#" class="menu-icon">
             <div class="menu-icon-mid"></div>
         </a>
+        <h1> Le Chef </h1>
         <header>
             <a href="/"><img src="/static/img/url1.svg"/></a>
             <ul id="menuheader">
-                <li><a class="menu-elem1" href="#">Découvrir</a>
+                <li class="dropdownmenu"><a class="menu-elem1" href="#">Découvrir</a>
                 <ul>
                         <li><a class="sous-elem1"href="/carte">La Carte</a></li>
                         <li><a class="sous-elem2" href="/chef">Le Chef</a></li>
@@ -26,24 +27,24 @@
                         <li><a class="sous-elem4" href="/cave"> La Cave </a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem2" href="#">Mais Aussi</a>
+                <li class="dropdownmenu"><a class="menu-elem2" href="#">Mais Aussi</a>
                     <ul>
                         <li><a class="sous-elem5" href="/salonprive">Salon Privé</a></li>
-                        <li><a class="sous-elem6" href="#">Le Comptoir</a></li>
-                        <li><a class="sous-elem7" href="#">La Rôtisserie</a></li>
-                        <li><a class="sous-elem8" href="#">Le Boulanger</a></li>
-                        <li><a class="sous-elem9" href="#">Tokyo</a></li>
-                        <li><a class="sous-elem10" href="#">AG MAG</a></li>
+                        <li><a class="sous-elem6" href="/comptoir">Le Comptoir</a></li>
+                        <li><a class="sous-elem7" href="/rotisserie">La Rôtisserie</a></li>
+                        <li><a class="sous-elem8" href="/boulanger">Le Boulanger</a></li>
+                        <li><a class="sous-elem9" href="/tokyo">Tokyo</a></li>
+                        <li><a class="sous-elem10" href="https://tourdargent.com/blog/" target="_blank">AG MAG</a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem3" href="#">Réserver</a>
+                <li class="dropdownmenu"><a class="menu-elem3" href="#">Réserver</a>
                     <ul>
                         <li><a class="sous-elem11" href="#">Réservation</a></li>
-                        <li><a class="sous-elem12" href="#">Invitation</a></li>
+                        <li><a class="sous-elem12" href="/invitation">Invitation</a></li>
                     </ul>
                 </li>
-                <li><a class="menu-elem4" href="#">Boutique</a></li>
-                <li><a class="menu-elem5" href="https://www.comptoirdelatour.com/fr/">Contact</a></li>
+                <li><a class="menu-elem4" href="https://www.comptoirdelatour.com/fr/" target="_blank">Boutique</a></li>
+                <li><a class="menu-elem5" href="/contact">Contact</a></li>
                 <li><a class="menu-elem6" id="language" href="#">EN</a></li>
             </ul>
         </header> 
@@ -52,7 +53,6 @@
         </a>
     </section>
     <section class="main">
-        <div class="bg-responsive"></div>
         <div class="picture-left">
             <div class="contain-right">
                 <h2><img src="/static/img/fleche-next-hover.svg"/>PHILIPPE LABBÉ<img src="/static/img/fleche-prev-hover.svg"/><span>CHAMPENOIS LA TÉNACITÉ</span></h2>
@@ -67,6 +67,7 @@
                 <p class="part5">Il affectionne les mariages de saveurs originales sublimant des produits de haute qualité et apporte une attention toute particulière à la carte des desserts qui doit être en parfaite harmonie avec sa cuisine.</p>
             </div>
         </div>
+        <div class="bg-responsive"></div>
         <a class="scroll-arrow1">
             <img src="/static/img/fleche-noir.svg"/>
         </a>

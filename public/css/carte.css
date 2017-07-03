@@ -10,300 +10,257 @@ body{
     overflow-x: hidden;
 }
 
-/*-----------------------------*/
-/*-- Background + Navigation --*/
-/*-----------------------------*/
-#bg{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(/static/img/carte/lacarte.jpg);
-    background-size: cover;
-    background-position: bottom;
+/*-------------------*/
+/*-- Structure text--*/
+/*-------------------*/
+h2{
+    color: #C09B78;
+    font-weight: lighter;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
 }
-
-
+span{
+    display: block;
+    font-weight: lighter;
+    font-size: 15px;
+    color: #1C1C1C;
+}
+strong{
+    color: #C09B78;
+    font-weight: lighter;
+    font-size: 15px;
+    display: block;
+}
+p{
+    font-size: 13px;
+}
+.comment{
+    font-size: 10px;
+}
+.comment1{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+ 
 /*------------------------------*/
 /*-- Menu left / Picture right--*/
 /*------------------------------*/
+/* Background */
 .picture-right{
     width: 100%;
     height: 500px;
     background-size: 60%;
-    background-position: top right;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .picture-right1{
+    height: 420px;
     background-image: url(/static/img/carte/Oursins-de-Dinard.jpg);
 }
 .picture-right2{
     background-image: url(/static/img/carte/Langue-de-canard-coeur-grille-jeunes-celeris-en-croute-de-sel-crumble-de-celeri-jus-aux-sucs-de-truffes.jpg);
 }
 .picture-right3{
+    height: 530px;
     background-image: url(/static/img/carte/Ris-de-veau-fermier-croustillant-petits-pois-thym-citron-ail-nouveau....jpg);
 }
 .picture-right4{
+    height: 450px;
     background-image: url(/static/img/carte/Chocolat-lait-mousse-caramel-sorbet-chocolat-blanc-ambre-lait-deshydrate-V2.jpg);
 }
 .picture-right5{
+    height: 520px;
     background-image: url(/static/img/carte/Fraises-Ciflorette-XXL-sur-un-biscuit-onctueux-Traou-Mad-cr%C3%A8me-glac%C3%A9e-italienne-%C3%A0-la-f%C3%A8ve-Tonka-marbr%C3%A9-de-granit%C3%A9.jpg);
-    height: 550px;
 }
 .picture-right6{
+    height: 450px;
     background-image: url(/static/img/carte/Aile-de-raie-bouclee-de-Petit-Bateau-citron-de-Menton-capres-amandes-salicornes-poudre-de-noisettes-V1.jpg);
+    background-position: right top;
 }
+
+/* Contain Text */
 .contain-left{
-    width: 60%;
+    width: 55%;
     height: 500px;
     background: white;
-    -webkit-clip-path: polygon(0 0, 95% 0, 75% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 0, 98% 0, 81.8% 100%, 0% 100%);
     text-align: right;
 }
 .contain-left1{
-    height: 550px;
+    height: 420px;
 }
+.contain-left3{
+    height: 530px;
+}
+.contain-left4{
+    height: 450px;
+}
+.contain-left5{
+    height: 520px;
+}
+.contain-left6{
+    height: 450px;
+}
+
+/* Elem contain */
+.elem-left{
+    margin-left: 8%;
+}
+.text strong{
+    margin-top: 2%;
+}
+.text{
+    margin-top: 9%;
+}
+.text1 strong{
+    margin-top: 2%;
+}
+.text1{
+    margin-top: 6%;
+}
+.text2 strong{
+    margin-top: 3%;
+}
+.text2{
+    margin-top: 13%;
+}
+.text3 strong{
+    margin-top: 3%;
+}
+.text3{
+    margin-top: 22%;
+}
+.title1{
+    padding-top: 12%;
+}
+.elem1{
+    margin-right: 19.7%;
+}
+.elem2{
+    margin-right: 20.8%;
+}
+.elem3{
+    margin-right: 21.7%;
+}
+.elem4{
+    margin-right: 22.5%;
+}
+.elem5{
+    margin-right: 23.5%;
+}
+.elem6{
+    margin-right: 24.5%;
+}
+.elem7{
+    margin-right: 25.6%;
+}
+.elem8{
+    margin-right: 26.5%;
+}
+.elem9{
+    margin-right: 27.5%;
+}
+.elem10{
+    margin-right: 28.5%;
+}
+.elem11{
+    margin-right: 29.5%;
+}
+.elem12{
+    margin-right: 30.5%;
+}
+
 
 /*------------------------------*/
 /*-- Menu right / Picture left--*/
 /*------------------------------*/
+/* Background */
 .picture-left{
     width: 100%;
     height: 500px;
     background-size: 60%;
-    background-position: top left;
+    background-position: bottom left;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .picture-left1{
-    background-image: url(/static/img/carte/Caneton-Mazarine-2eme-service.jpg);
+    height: 420px;
+    background-image: url(/static/img/carte/Caneton-Mazarine-2eme-service.jpg)
 }
 .picture-left2{
     background-image: url(/static/img/carte/Saint-Pierre-de-ligne-de-Port-en-Bessin.jpg);
 }
 .picture-left3{
+    height: 450px;
     background-image: url(/static/img/carte/img3_zoom.jpg);
 }
 .picture-left4{
     background-image: url(/static/img/carte/Mangue-ananas-papaye-crumble-sorbet-noix-de-coco-maracuja-kefir.jpg);
 }
 .picture-left5{
+    height: 560px;
     background-image: url(/static/img/carte/Langouste-puce-royale-a-la-nage-epicee-citronnelle-et-limequat-V1.jpg);
-    height: 550px;
 }
+
+/* Contain Text */
 .contain-right{
-    width: 60%;
+    width: 55%;
     height: 500px;
     background: white;
-    -webkit-clip-path: polygon(8.3% 0, 100% 0, 100% 100%, 28.3% 100%);
-    margin-left: 40%;
-    text-align: left;
+    margin-left: 45%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 16.2% 100%);
 }
 .contain-right1{
-    height: 550px;
+    height: 420px;
 }
-
-/*-------------------*/
-/*-- Structure text--*/
-/*-------------------*/
-h2{
-    color: #C09B78;
-    font-weight: 100;
-    font-size: 30px;
-    text-align: center;
-    padding-top: 70px;
+.contain-right3{
+    height: 450px;
 }
-span{
-    display: block;
-    font-weight: 100;
-    font-size: 15px;
-    color: #1C1C1C;
+.contain-right5{
+    height: 560px;
 }
-strong{
-    color: #C09B78;
-    font-weight: 100;
-    font-size: 15px;
-    display: block;
-    margin-top: 15px;
-    margin-right: 25%;
-}
-p{
-    font-size: 12px;
-}
-
-
-/*----------------*/
-/*- contain-left -*/
-/*----------------*/
-/* elem */
-.elem1{
-    margin-right: 27%;
-}
-.elem2{
-    margin-right: 29%;
-}
-.elem3{
-    margin-right: 30%;
-}
-.elem4{
-    margin-right: 31%;
-}
-.elem5{
-    margin-right: 32.5%;
-}
-.elem6{
-    margin-right: 34%;
-}
-.elem7{
-   margin-right: 36%;
-}
-.elem8{
-    margin-right: 37%;
-}
-.elem9{
-    margin-right: 39%;
-}
-.elem10{
-    margin-right: 40%;
-}
-.elem11{
-    margin-right: 42%;
-}
-/* titre */
-.titre1{
-    padding-top: 8%;
-}
-.titre3{
-    padding-top: 5%;
-}
-.titre5{
-    padding-top: 18%;
-}
-.titre7{
-    padding-top: 7%;
-}
-/* text */
-.text{
-    margin-top: 80px;
-}
-.text2{
-    margin-top: 60px;
-}
-.text4{
-    margin-top: 40px;
-}
-.text6{
-    margin-top: 80px;
-}
-.text8{
-    margin-top: 50px;
-}
-.text10{
-    margin-top: 125px;
-}
-/* comment */
-.comment1{
-    font-size: 10px;
-    text-align: right;
-    margin-right: 2%;
-}
-.comment3{
-    font-size: 10px;
-    text-align: right;
-    margin-right: 2%;
-}
-.comment4{
-    font-size: 10px;
-    text-align: right;
-    margin-right: 2%;
-}
-
-
-
-/*-----------------*/
-/*- contain-right -*/
-/*-----------------*/
-/* elem */
-.elem12{
-    margin-left: 20%;
+/* Elem contain */
+.elem-right{
+    margin-right: 8%;
 }
 .elem13{
-    margin-left: 21%;
+    margin-left: 19.7%;
 }
 .elem14{
-    margin-left: 23%;
+    margin-left: 20.8%;
 }
 .elem15{
-    margin-left: 24%;
+    margin-left: 21.7%;
 }
 .elem16{
-    margin-left: 25%;
+    margin-left: 22.5%;
 }
 .elem17{
-    margin-left: 26%;
+    margin-left: 23.5%;
 }
 .elem18{
-    margin-left: 27%;
+    margin-left: 24.5%;
 }
 .elem19{
-    margin-left: 28%;
+    margin-left: 25.6%;
 }
 .elem20{
-    margin-left: 29%;
+    margin-left: 27.5%;
 }
 .elem21{
-    margin-left: 30%;
+    margin-left: 28.5%;
 }
 .elem22{
-    margin-left: 31%;
+    margin-left: 29.5%;
 }
 .elem23{
-    margin-left: 32%;
+    margin-left: 30.5%;
 }
-/* titre */
-.titre{
-    padding-top: 18%;
+.elem24{
+    margin-left: 31.5%;
 }
-.titre2{
-    padding-top: 8%;
-}
-.titre4{
-    padding-top: 17%;
-}
-.titre6{
-    padding-top: 9%;
-}
-.titre8{
-    padding-top: 5%;
-}
-/* text */
-.text1{
-    margin-top: 90px;
-}
-.text3{
-    margin-top: 40px;
-}
-.text5{
-    margin-top: 70px;
-}
-.text7{
-    margin-top: 50px;
-}
-.text9{
-    margin-top: 40px;
-}
-/* comment */
-.comment{
-    font-size: 10px;
-    text-align: left;
-    margin-left: 2%;
-}
-.comment2{
-    font-size: 10px;
-    text-align: left;
-    margin-left: 2%;
-}
-
 /*--------------*/
 /*- Responsive -*/
 /*--------------*/
@@ -311,70 +268,112 @@ p{
 /* Mobile */
 
 @media all and (max-width:720px){
-    .contain-right{
-        width: 100%;
-        -webkit-clip-path: none;
+    
+    /* Main Style */
+    .picture-left,
+    .picture-right{
         background: white;
-        height: 70vhpx;
-        text-align: left;
-        margin-left: 0;
-    }
+    } 
     .contain-left{
         width: 100%;
-        -webkit-clip-path: none;
+        height: 0;
         background: white;
-        height: 70vh;
+        -webkit-clip-path: none;
         text-align: left;
     }
-    .picture-right,.picture-left{
+    .contain-right{
+        width: 100%;
+        height: 0;
         background: white;
+        margin-left: 0%;
+        -webkit-clip-path: none;
+        text-align: left;
     }
-    .elem12,.elem13,.elem14,
-    .elem15,.elem16,.elem17,
-    .elem18,.elem19,.elem20,
-    .elem21,.elem22,.elem23{
+    h2{
+        font-size: 25px;
+        width: 85%;
+        margin-left: 7.5%;
+        padding-top: 30px;
+    }
+    strong{
+        font-size: 12px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .text,.text1,.text2,
+    .text3{
+        margin-top: 0;
+    }
+    .text strong,.text1 strong,.text2 strong,
+    .text3 strong{
+        margin-top: 0;
+    }
+    .comment{
+        font-size: 8px;
+    }
+    .title1{
+        padding-top: 15px;
+    }
+    .contain-left p,.contain-left strong,
+    .contain-right p,.contain-right strong{
+        width: 85%;
+        margin-left: 7.5%;
+    }
+    .elem-right{
+        margin-right: 0%;
+    }
+    .elem-left{
         margin-left: 0;
     }
     .elem1,.elem2,.elem3,
     .elem4,.elem5,.elem6,
     .elem7,.elem8,.elem9,
-    .elem10,.elem11{
-        margin-left: 0;
-    }
-    .comment,.comment1,.comment2,
-    .comment3,.comment4,.comment5{
-        margin-left: 0;
-        text-align: left;
-    }
-    .text,.text1,.text2,.text3,
-    .text4,.text5,.text6,
-    .text7,.text8,.text9,
-    .text10{
-        margin-top: 0;
-    }
-    .titre,.titre1,.titre2,.titre3,
-    .titre4,.titre5,.titre6,
-    .titre7,.titre8{
-        padding-top: 0;
-    }
-    h2{
-        color: #C09B78;
-        font-weight: 100;
-        font-size: 30px;
-        text-align: center;
-        padding-top: 0;
-    }
-    strong{
-        color: #C09B78;
-        font-weight: 100;
-        font-size: 13px;
-        display: block;
-        margin-top: 0;
+    .elem10,.elem11,.elem12{
         margin-right: 0;
     }
+    .elem13,.elem14,.elem15,
+    .elem16,.elem17,.elem18,
+    .elem19,.elem20,.elem21,
+    .elem22,.elem23,.elem24{
+        margin-left: 0;
+    }
+    
+    /* Height */
+    .picture-right1{
+        height: 50vh;
+    }
+    .picture-right2{
+        height: 65vh;
+    }
+    .picture-right3{
+        height: 70vh;
+    }
+    .picture-right4{
+        height: 40vh;
+    }
+    .picture-right6{
+        height: 30vh;
+    }
+    .picture-left1{
+        height: 30vh;
+    }
+    .picture-left2{
+        height: 60vh;
+    }
+    .picture-left3{
+        height: 25vh;
+    }
+    .picture-left4{
+        height: 65vh;
+    }
+    /* Background for responsive */
     .bg-responsive{
         width: 100%;
-        height: 30vh;
+        height: 300px;
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
