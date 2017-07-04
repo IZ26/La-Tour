@@ -55,15 +55,15 @@
         <div class="picture-left">
             <div class="contain-right">
                 <div id="text">
-                <h2 class="elem"> Découvrez le Comptoir</h2>
-                <p class="elem1">Que vous sortiez d’un déjeuner à la Tour d’Argent ou que vous soyez à vous dégourdir les jambes quai de la Tournelle, poussez la porte du Comptoir de la Tour : notre bar-boutique ouvert à tous où vous pourrez boire un café, un jus de fruits, une coupe de champagne – et plus si affinités.</p>
-                <p class="elem2">Car avec notre gamme d’épicerie fine sucrée (confitures, miel de notre toit, biscuits…) et salée (terrines, foie gras, vinaigres, huiles, moutardes…), de vins, d’accessoires et d’arts de la table, il faudrait être ermite pour repartir les mains vides. Prenez le temps de flâner, et confectionnez votre coffret cadeau sur-mesure et selon vos envies. Des coffrets qui pourraient ressembler à ceux-là…</p>
-                <p class="elem3">Coffret “L’Incontournable” composé de : Sauternes, foie gras de canard entier, chutney aux épices galantes. Entourez-vous de gourmets, enlevez vos gants, savourez.</p>
-                <p class="elem4">Coffret “Un dimanche à la campagne” composé de : Bordeaux Graves rouge, rillettes de canard au foie gras, terrine de canard et foie gras au poivre vert, chutney aux épices galantes.</p>
-                <p class="elem5">Une invitation au voyage, comme disait Baudelaire ?</p>
-                <p class="elem6">“Le déjeuner sur l’herbe” répondrait Manet. Deux terrines de canard au foie gras, un chutney et notre délicieux Graves rouge : avec ce coffret, l’exotisme n’est pas loin…</p>
-                <p class="elem8">Le Comptoir de la Tour d’Argent se fait une certaine idée de la France – et de la qualité de ses artisans.</p>
-                <p class="elem9">Main dans la main, fidèlement, la Tour ne travaille qu’avec des producteurs français attachés à la terre, au savoir-faire et à la transmission.</p>
+                <h2> Découvrez le Comptoir</h2>
+                <p>Que vous sortiez d’un déjeuner à la Tour d’Argent ou que vous soyez à vous dégourdir les jambes quai de la Tournelle, poussez la porte du Comptoir de la Tour : notre bar-boutique ouvert à tous où vous pourrez boire un café, un jus de fruits, une coupe de champagne – et plus si affinités.</p>
+                <p>Car avec notre gamme d’épicerie fine sucrée (confitures, miel de notre toit, biscuits…) et salée (terrines, foie gras, vinaigres, huiles, moutardes…), de vins, d’accessoires et d’arts de la table, il faudrait être ermite pour repartir les mains vides. Prenez le temps de flâner, et confectionnez votre coffret cadeau sur-mesure et selon vos envies. Des coffrets qui pourraient ressembler à ceux-là…</p>
+                <p>Coffret “L’Incontournable” composé de : Sauternes, foie gras de canard entier, chutney aux épices galantes. Entourez-vous de gourmets, enlevez vos gants, savourez.</p>
+                <p>Coffret “Un dimanche à la campagne” composé de : Bordeaux Graves rouge, rillettes de canard au foie gras, terrine de canard et foie gras au poivre vert, chutney aux épices galantes.</p>
+                <p>Une invitation au voyage, comme disait Baudelaire ?</p>
+                <p>“Le déjeuner sur l’herbe” répondrait Manet. Deux terrines de canard au foie gras, un chutney et notre délicieux Graves rouge : avec ce coffret, l’exotisme n’est pas loin…</p>
+                <p>Le Comptoir de la Tour d’Argent se fait une certaine idée de la France – et de la qualité de ses artisans.</p>
+                <p>Main dans la main, fidèlement, la Tour ne travaille qu’avec des producteurs français attachés à la terre, au savoir-faire et à la transmission.</p>
                 </div>
             </div>
             <div class="bg-responsive"></div>
@@ -81,6 +81,38 @@
         <p><a href="https://www.instagram.com/tourdargentparis" target="_blank"><img src="/static/img/comptoir/instagram.png"/>@tourdargentparis</a></p>
         <iframe width="50%" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAjLQU8xjIgbT-BVvTRwPXdpgUmgFmDqQg &q=17+Quai+de+la+Tournelle,+75005+Paris">
         </iframe>
+    </section>
+    <section class="reservation">
+       <a id="button-close"><img src="/static/img/close.svg"/></a>
+        <div id="form-reservation">
+            <input type="date">
+            <input id="nb-person" type="text" list="series" placeholder="2"> 
+                <datalist id="series">
+                    <option value="2"> 
+                    <option value="3"> 
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                </datalist>
+            <span><img src="/static/img/man.svg"/></span>
+            <div id="hour">
+                <div class="day">
+                    <strong> DEJEUNER </strong>
+                    <input type="time">
+                </div>
+                <div class="day">
+                    <strong> DÎNER </strong>
+                    <input type="time">
+                </div>
+            </div>
+            <input id="name" placeholder="Nom*" type="text">
+            <input placeholder="Prénom*" type="text">
+            <input placeholder="E-mail*" type="email">
+            <input placeholder="Téléphone*" type="tel">
+            <div class="button">
+                <input class="sendmail" type="submit" value="Envoyé">
+            </div>
+        </div>
     </section>
     <footer>
         <img src="/static/img/Fichier%201.svg"/>

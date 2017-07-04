@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    overflow-X: hidden;
+}
 .main{
     width: 100%;
     height: 100vh;
@@ -19,30 +22,15 @@
 .main span{
     display: block;
     font-size: 13px;
-}
+} 
 .see-more{
     color: #C09B78;
-    font-size: 10px;
+    font-size: 15px;
     text-align: center;
     cursor: pointer;
 }
-#shape{
-    position: absolute;
-    width: 30%;
-    height: 81vh;
-    background: white;
-    -webkit-clip-path: polygon(75% 0, 100% 0%, 80% 100%, 55% 100%);
-    left: 43%;
-    margin-top: 30px;
-}
-#shape1{
-    position: absolute;
-    width: 30%;
-    height: 81vh;
-    background: white;
-    -webkit-clip-path: polygon(0 0, 25% 0, 45% 100%, 20% 100%);
-    left: 26%;
-    margin-top: 30px;
+.see-more:hover{
+    color: #fff;
 }
 .terail-family{
     height: 81vh;
@@ -55,70 +43,135 @@
 .andreI{
     background-image: url(/static/img/heritage/Page-Heritage-2-Andre-Terrail.jpg);
     width: 33.3%;
+    position: absolute;
+    left: 0%;
+    -webkit-transition:
+        all 1s ease-in-out;
+    -webkit-clip-path: polygon(0 0, 75% 0, 100% 100%, 0 100%);
 }
 .claude{
     background-image: url(/static/img/heritage/Claude-Terrail-2.jpg);
     width: 33.3%;
+    position: absolute;
+    left: 50%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 25% 100%);
+    -webkit-transform:
+        translateX(-50%);
+    -webkit-transition:
+        all 1s ease-in-out;
 }
 .andreII{
     background-image: url(/static/img/heritage/Page-Heritage-4-Andre-Terrail.jpg);
     width: 33.4%;
+    position: absolute;
+    right: 0;
+    -webkit-transition:
+        all 1s ease-in-out;
+    -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
 }
-#andreI-bio{
+.andreI-bio{
     position: absolute;
     width: 35%;
     left: 45%;
     top: 30%;
-    display: none;
+    opacity: 0;
+    -webkit-transition:
+        all .5s ease-in-out;
 }
-#andreI-bio strong{
+.andreI-bio strong{
     color: #C09B78;
     font-size: 35px;
     font-weight: 100;
 }
-#andreI-bio p{
+.andreI-bio p{
     margin-top: 20px;
     font-size: 15px;
 }
-#claude-bio{
+.claude-bio{
     position: absolute;
     width: 35%;
     left: 45%;
     top: 30%;
-    display: none;
+    opacity: 0;
+    -webkit-transition:
+        all .5s ease-in-out;
 }
-#claude-bio strong{
+.claude-bio strong{
     color: #C09B78;
     font-size: 35px;
     font-weight: 100;
 }
-#claude-bio p{
+.claude-bio p{
     margin-top: 20px;
     font-size: 15px;
 }
-#andreII-bio{
+.andreII-bio{
     position: absolute;
     width: 35%;
     left: 15%;
     top: 30%;
-    display: none;
+    opacity: 0;
+    -webkit-transition:
+        all .5s ease-in-out;
 }
-#andreII-bio strong{
+.andreII-bio strong{
     color: #C09B78;
     font-size: 35px;
     font-weight: 100;
 }
-#andreII-bio p{
+.andreII-bio p{
     margin-top: 20px;
     font-size: 15px;
 }
+.bio-appear{
+    opacity: 1;
+    -webkit-transition:
+        all 1.5s ease-in-out;
+}
+.picture-move{
+    position: absolute;
+    left: -50%;
+    -webkit-transition:
+        all 1s ease-in-out;
+}
+.picture-move1{
+    position: absolute;
+    left: 150%;
+    -webkit-transition:
+        all 1s ease-in-out;
+}
+.picture-move2{
+    position: absolute;
+    right: -100%;
+    -webkit-transition:
+        all 1s ease-in-out;
+}
+.picture-move3{
+    position: absolute;
+    left: 16%;
+    -webkit-transition:
+        all 1s ease-in-out;
+}
+.show-less{
+    color: #C09B78;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin-top: 30px;
+    margin-left: 80%;
+    position: absolute;
+}
+.show-less:hover{
+    color: #1C1C1C;
+}
+
+/* Timeline */
 .end{
     width: 100%;
     height: 87vh;
     position: relative;
 }
-
-/* Timeline */
 #timeline a {
 	color: #1C1C1C;
 	text-decoration: none;
@@ -251,4 +304,131 @@
 }
 #prev{
     left:15%;
+}
+#timeline-responsive{
+    display: none;
+}
+@media all and (max-width:720px){
+    .main{
+        height: 280vh;
+    }
+    .scroll-arrow1{
+        display: none;
+    }
+    .andreI,.claude,.andreII{
+        width: 100%;
+        height: 55vh;
+        -webkit-clip-path: none;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .andreI{
+        top: 11%;
+    }
+    .andreI-bio{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 1%;
+        opacity: 1;
+        -webkit-transition:
+            all .5s ease-in-out;
+        text-align: center;
+    }
+    .andreI-bio strong{
+        color: #C09B78;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .andreI-bio p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .show-less{
+        display: none;
+    }
+    .claude{
+        top: 44%;
+    }
+    .claude-bio{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 33%;
+        opacity: 1;
+        -webkit-transition:
+            all .5s ease-in-out;
+        text-align:center;
+    }
+    .claude-bio strong{
+        color: #C09B78;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .claude-bio p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .andreII{
+        top: 77%;
+    }
+    .andreII-bio{
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        top: 66%;
+        opacity: 1;
+        -webkit-transition:
+            all .5s ease-in-out;
+        text-align:center;
+    }
+    .andreII-bio strong{
+        color: #C09B78;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    .andreII-bio p{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .terail-family h2{
+        display: none;
+    }
+    .end{
+        display: none;
+    }
+    #timeline-responsive{
+        width: 100%;
+        height: 935vh;
+        display: block;
+    }
+    .date{
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .date img{
+        display: block;
+        margin-left: 50%;
+        -webkit-transform:
+            translateX(-50%);
+        padding-bottom: 15px;
+    }
+    .date strong{
+        color: #C09B78;
+        font-size: 25px;
+        font-weight: 100;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10px;
+    }
+    .date p{
+        width: 90%;
+        margin-left: 5%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+    }
 }

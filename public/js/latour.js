@@ -53,27 +53,52 @@ $('.scroll-arrow2').click(function(){
     return false;
  });
 
-// BURGER 
+// TERAIL FAMILY
 
 $('#button1').click(function(){
-    $("#andreI-bio").css('display','inline-block');
-    $(".claude").css('display','none');
-    $(".andreII").css('display','none');
-    $("#shape").css('display','none');
+    $(".andreI-bio").addClass('bio-appear');
+    $(".claude").addClass('picture-move1');
+    $(".andreII").addClass('picture-move2');
  });
 $('#button2').click(function(){
-    $("#claude-bio").css('display','inline-block');
-    $(".andreI").css('display','none');
-    $(".andreII").css('display','none');
-    $("#shape").css('display','none');
+    $(".claude-bio").addClass('bio-appear');
+    $(".claude").addClass('picture-move3');
+    $(".andreI").addClass('picture-move');
+    $(".andreII").addClass('picture-move2');
  });
 $('#button3').click(function(){
-    $("#andreII-bio").css('display','inline-block');
+    $(".andreII-bio").addClass('bio-appear');
     $(".andreII").css('float','right');
-    $(".claude").css('display','none');
-    $(".andreI").css('display','none');
-    $("#shape1").css('display','none');
+    $(".claude").addClass('picture-move');
+    $(".andreI").addClass('picture-move');
  });
+
+$('#button-close1').click(function(){
+    $(".andreI-bio").removeClass('bio-appear');
+    $(".claude").removeClass('picture-move1');
+    $(".andreII").removeClass('picture-move2');
+ });
+$('#button-close2').click(function(){
+    $(".claude-bio").removeClass('bio-appear');
+    $(".claude").removeClass('picture-move3');
+    $(".andreI").removeClass('picture-move');
+    $(".andreII").removeClass('picture-move2');
+ });
+$('#button-close3').click(function(){
+    $(".andreII-bio").removeClass('bio-appear');
+    $(".claude").removeClass('picture-move');
+    $(".andreI").removeClass('picture-move');
+});
+
+// RESERVATION
+$('.sous-elem11').click(function(){
+    $(".reservation").addClass('reservation-form');
+    console.log('ok');
+});
+$('#button-close').click(function(){
+    $(".reservation").removeClass('reservation-form');
+});
+
 
 // FUNCTION SWIPER 
  var swiper = new Swiper('.swiper-container', {
@@ -86,5 +111,3 @@ $('#button3').click(function(){
         slidesPerView: 1,
         loop: true,
 }); 
-
-// TIMELINE

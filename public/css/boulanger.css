@@ -30,7 +30,6 @@
 }
 .contain-right p{
     font-size: 14px;
-    font-weight: 100;
     color: #1C1C1C;
     margin-left: 20%;
     margin-right: 10%;
@@ -177,6 +176,7 @@
         width: 90%;
         margin-left: 5%;
         margin-top: 3%;
+        font-size: 14px;
     }
     .contain-right h2{
         padding-top: 5%;
