@@ -28,13 +28,18 @@ $('.button-hide-text').click(function(){
 
 // BURGER
 $('.menu-icon').click(function(){
-    $("header").css("display","block");
+    $("header").addClass('header-show');
+    $('.menu-icon').css('opacity','0');
+    $('.hidemenuresponsive').css('opacity','1');
  });
 $('#logo-prin').click(function(){
-    $("header").css("display","none");
+    $("header").removeClass("header-show");
+    $('.menu-icon').css('opacity','1');
  });
-$('h1').click(function(){
-    $("header").css('display','none');
+$('.hidemenuresponsive').click(function(){
+    $("header").removeClass('header-show');
+    $('.hidemenuresponsive').css('display','none');
+    $('.menu-icon').css('opacity','1')
  });
 
 

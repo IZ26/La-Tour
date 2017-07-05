@@ -226,6 +226,13 @@ footer img{
     animation: arrow-scroll 1s infinite ease;
     display: block;
 }
+.bg h1{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 100;
+    margin-top: 37%;
+    margin-left: 6%;
+}
 @keyframes arrow-scroll {
     0% {
         transform: translateY(0) translateX(-50%);
@@ -256,7 +263,6 @@ footer img{
     -webkit-transition:
         all 1s ease-in-out;
     background-color: rgba(0,0,0,.7);
-    
 }
 .reservation-form{
     top: 0%;
@@ -343,20 +349,25 @@ footer img{
         translateX(-50%);
     position: absolute;
 }
-
+.hidemenuresponsive{
+    display: none;
+}
 @media screen and (max-width: 720px){
     header{
-        display: none;
+        display: block;
         width: 100%;
         height: 100vh;
         background: white;
         -webkit-clip-path: polygon(25% 0, 100% 0, 100% 100%, 65% 100%);
-        margin-left: 0%;
-        animation: none;
-        -webkit-animation: 
-            menu-appear 1s ease-in-out;
+        margin-left: 150%;
+        -webkit-transition:
+            all 1s ease-in-out;
     }
-    
+    .header-show{
+        margin-left: 0%;
+        -webkit-transition:
+            all 1s ease-in-out;
+    }
     header img{
         width: 50%;
         margin-top: 8%;
@@ -407,9 +418,37 @@ footer img{
     a.menu-icon:hover:before, a.menu-icon:hover:after {
         width: 100%;
     }
-    @keyframes menu-appear{
-        0%{margin-left: 100%};
-        30%{margin-left: 100%}
-        100%{margin-left: 0%}
+    .bg h1{
+        font-size: 60px;
+        color: #ffffff;
+        font-weight: 100;
+        margin-top: 120%;
+        margin-left: 5%;
+    }
+    #form-reservation{
+        width: 100%;
+        height: 70%;
+        background: #fff;
+        margin-left: 50%;
+        margin-top: 35%;
+        -webkit-transform:
+            translateX(-50%);
+        border: 1px solid #C09B78;
+        box-sizing: border-box;
+        position: relative;
+        padding-top: 3%;
+    }
+    #button-close img{
+        width: 30px;
+    }
+    .hidemenuresponsive{
+        display: block;
+        opacity: 0;
+        position: absolute;
+        left: 10%;
+        top: 7%;
+    }
+    .hidemenuresponsive img{
+        width: 30%;
     }
 }
